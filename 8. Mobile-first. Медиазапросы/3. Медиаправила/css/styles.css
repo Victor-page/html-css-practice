@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  border: 5px solid lightgrey;
+}
+
+.page-footer,
+.page-sidebar,
+.page-article {
+  min-height: 50px;
+  border: 5px solid lightgrey;
+}
+
+.page-footer {
+  background-color: #f5826b;
+}
+
+.page-sidebar {
+  background-color: #0a7050;
+}
+.page-article {
+  background-color: #2779b1;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-footer {
+    width: 100%;
+  }
+
+  .page-sidebar {
+    width: 20%;
+  }
+
+  .page-article {
+    width: 80%;
+  }
+}

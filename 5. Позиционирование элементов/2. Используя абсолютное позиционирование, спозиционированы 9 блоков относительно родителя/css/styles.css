@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 20px;
+}
+
+.wrapper {
+  width: 400px;
+  height: 400px;
+  background-color: #424242;
+  margin: auto;
+  position: relative;
+}
+
+.inner {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.inner:nth-child(1) {
+  background-color: blanchedalmond;
+}
+
+.inner:nth-child(2) {
+  background-color: DarkGreen;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inner:nth-child(3) {
+  background-color: Coral;
+  bottom: 0;
+}
+
+.inner:nth-child(4) {
+  background-color: PeachPuff;
+  right: 0;
+}
+
+.inner:nth-child(5) {
+  background-color: MediumSlateBlue;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inner:nth-child(6) {
+  background-color: DarkSeaGreen;
+  right: 0;
+  bottom: 0;
+}
+
+.inner:nth-child(7) {
+  background-color: Peru;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inner:nth-child(8) {
+  background-color: SlateGray;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.inner:nth-child(9) {
+  background-color: RosyBrown;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

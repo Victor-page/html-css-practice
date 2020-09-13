@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+
+.content {
+  background-color: #fbf281;
+}
+
+.sidebar {
+  background-color: #b8e986;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .content {
+    width: 80%;
+  }
+
+  .sidebar {
+    width: 20%;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  counter-reset: my-awesome-counter 10;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  /* инкрементируем счетчик для переменной my-awesome-counter,
+   уменьшая значение на 1 для каждого селектора   */
+  counter-increment: my-awesome-counter -1;
+  content: counter(my-awesome-counter, upper-roman);
+  /* float: left; */
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+  background-color: teal;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+}
+
+/* 
+li::after {
+  display: table;
+  content: "";
+  clear: both;
+} */

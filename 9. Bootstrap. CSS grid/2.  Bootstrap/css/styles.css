@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* 
+* {
+  outline: 1px solid orange;
+} */
+
+/* [class*="col"] {
+  background-color: olivedrab;
+} */
+
+.col-12:nth-child(odd) .box {
+  background-color: lightgray;
+}
+
+.col-12:nth-child(even) .box {
+  background-color: lightyellow;
+}
+
+.text {
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.menu {
+  background-color: palevioletred;
+  margin: 0 auto;
+  padding: 0;
+  width: 970px;
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu-item:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.menu-link {
+  text-decoration: none;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: paleturquoise;
+  cursor: pointer;
+}

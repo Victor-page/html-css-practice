@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.banner {
+  min-height: 1000px;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 132, 0.3),
+      rgba(51, 0, 27, 0.5)
+    ),
+    linear-gradient(
+      to top,
+      rgba(26, 42, 108, 0.1),
+      rgba(178, 31, 31, 0.1),
+      rgba(253, 187, 45, 0.9)
+    ),
+    url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

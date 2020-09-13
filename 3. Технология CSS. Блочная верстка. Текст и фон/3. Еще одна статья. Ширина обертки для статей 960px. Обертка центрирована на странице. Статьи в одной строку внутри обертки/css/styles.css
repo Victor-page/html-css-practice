@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 20px auto;
+  width: 960px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+}
+
+.item {
+  padding: 20px;
+  width: 470px;
+  display: inline-block;
+}
+
+.item a {
+  display: inline-block;
+}

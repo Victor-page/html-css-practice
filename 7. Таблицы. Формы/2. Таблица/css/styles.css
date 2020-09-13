@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 470px;
+  margin: auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.table-caption {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.table-body tr td:first-child {
+  text-transform: uppercase;
+}
+
+.table-body tr td:nth-child(n + 2) {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 3px solid #444444;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+td {
+  color: #444444;
+}

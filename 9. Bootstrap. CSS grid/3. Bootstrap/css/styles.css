@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* 
+* {
+  outline: 1px solid orange;
+} */
+
+/* [class*="col"] {
+  background-color: olivedrab;
+} */
+
+.row:first-child .col-12:nth-child(odd) .box {
+  background-color: lightgray;
+}
+
+.row:first-child .col-12:nth-child(even) .box {
+  background-color: lightcoral;
+}
+
+.row:nth-child(2n) .col-12:nth-child(even) .box {
+  background-color: lightgoldenrodyellow;
+}
+
+.row:nth-child(2n) .col-12:nth-child(odd) .box {
+  background-color: lightslategray;
+}
+
+.text {
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .row:first-child .text {
+    padding: 80px 0;
+  }
+}

@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  flex: 0 0 200px;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.card-image {
+  transition-duration: 0.5s;
+}
+
+.card-image:hover {
+  transform: rotate(5deg);
+}
+
+.card-title {
+  transition: transform 2s, color 5s;
+}
+
+.card-title:hover {
+  transform: scale(1.15);
+  color: white;
+}
+
+.card-desc {
+  padding: 0 10px;
+}
+
+.card-button {
+  text-transform: uppercase;
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100px;
+  transition: width 5s, background-color 0.4s;
+}
+
+.card-button:hover {
+  width: 100%;
+  background-color: palevioletred;
+}

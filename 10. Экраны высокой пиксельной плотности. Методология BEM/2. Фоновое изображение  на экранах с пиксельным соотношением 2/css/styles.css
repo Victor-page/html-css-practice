@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  min-width: 400px;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+
+.image {
+  min-width: 400px;
+  min-height: 200px;
+  background-image: url(https://placeimg.com/400/200/any);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Media */
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .image {
+    background-image: url(https://placeimg.com/800/400/any);
+  }
+}
